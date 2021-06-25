@@ -1,0 +1,18 @@
+/* Variable color mixin */
+$txcolor1: #eb7e01;
+
+@mixin Subtitle {
+    color: $txcolor1;
+    text-shadow: 1px 1px #fff;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+@mixin mediaP {
+    transform: scale(1.05);
+    z-index: 1;
+    transition: all 250ms;
+    object-fit: cover;
+    
+}

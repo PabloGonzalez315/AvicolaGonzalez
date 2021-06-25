@@ -1,0 +1,27 @@
+/* animacion productos-extend */
+%AnimacionTexto {
+    text-align: center;
+    font-size: 120px;
+    font-weight: bold;
+    color: $txcolor1;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+
+    @media only screen and (max-width: 576px) {
+        
+            text-align: center;
+            font-size: 60px;
+            font-weight: bold;
+            color: $txcolor1;
+            text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+        
+    }
+
+    @media (min-width: 577px) and (max-width: 1024px) {
+        text-align: center;
+        font-size: 90px;
+        font-weight: bold;
+        color: $txcolor1;
+        text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+    
+}
+}

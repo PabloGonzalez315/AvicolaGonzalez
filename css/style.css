@@ -1,0 +1,284 @@
+/* Variable color mixin */
+/* cambiando el background de la caja donde se encuentra el texbox ''h5 class="card-title fs-3 textbox'' cambia el estilo de las letras textbox */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* Font family general */
+  font-family: "Poppins", sans-serif;
+}
+
+.space {
+  padding: 50px;
+}
+
+/* general del body */
+.body {
+  background-color: white;
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%;
+}
+
+.logof {
+  width: 130px;
+  height: 200px;
+}
+
+.Coder {
+  padding-top: 5px;
+}
+.Coder:hover {
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+  overflow: hidden;
+}
+
+.Pq {
+  font-weight: bold;
+}
+
+table {
+  width: 70%;
+  border: 1px solid black;
+  padding: auto;
+  margin: auto;
+  border-collapse: collapse;
+  border-width: 1px solid black;
+}
+
+th,
+td {
+  width: 20%;
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.subtitulo {
+  color: #eb7e01;
+  text-shadow: 1px 1px #fff;
+  font-size: 30px;
+  text-align: center;
+}
+
+.textbox {
+  background-color: white;
+  text-shadow: 1px 1px #fff;
+  color: #eb7e01;
+  text-align: center;
+}
+
+.normal {
+  font-size: calc(1.3rem + .6vw);
+}
+
+.fnt1 {
+  font-size: 1.25rem !important;
+  display: inline;
+}
+
+.fnt2 {
+  font-size: 1rem !important;
+}
+
+.cuadro {
+  display: inline;
+}
+
+.cerror {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  display: block;
+  justify-content: center;
+  align-content: center;
+}
+
+.terror {
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.imgerror {
+  margin: auto;
+  padding: 25px;
+}
+
+/* Boton de whatsapp */
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 14px;
+  right: 40px;
+  background-color: #25d366;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 40px;
+  z-index: 100;
+}
+
+.whatsapp i {
+  color: white;
+}
+
+footer {
+  background-color: #000000;
+}
+
+.propio {
+  width: 100%;
+  height: 400px;
+}
+
+/* Variable color texto */
+/* El famoso grid */
+.Grid {
+  display: grid;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "trozado trozado trozado" "pollo pechuga PataMuslo" "alas gallina molida" "rebozados rebozados rebozados" "patitas medallon PatitasRellenas" ". MedallonRelleno . ";
+  gap: 15px;
+  text-align: center;
+}
+
+/* Transformacion */
+.Grid img {
+  padding-bottom: 10px;
+}
+.Grid img:hover {
+  transform: scale(1.05);
+  z-index: 1;
+  transition: all 250ms;
+  object-fit: cover;
+}
+
+.trozado {
+  grid-area: trozado;
+}
+
+.pollo {
+  grid-area: pollo;
+}
+
+.pechuga {
+  grid-area: pechuga;
+}
+
+.PataMuslo {
+  grid-area: PataMuslo;
+}
+
+.alas {
+  grid-area: alas;
+}
+
+.gallina {
+  grid-area: gallina;
+}
+
+.molida {
+  grid-area: molida;
+}
+
+.rebozados {
+  grid-area: rebozados;
+}
+
+.patitas {
+  grid-area: patitas;
+}
+
+.medallon {
+  grid-area: medallon;
+}
+
+.PatitasRellenas {
+  grid-area: PatitasRellenas;
+}
+
+.MedallonRelleno {
+  grid-area: MedallonRelleno;
+}
+
+@media only screen and (max-width: 576px) {
+  .Grid {
+    grid-template-columns: 100%;
+    grid-row: 1fr;
+    grid-template-areas: unset;
+    justify-items: center;
+  }
+
+  .trozado,
+.pollo,
+.pechuga,
+.PataMuslo,
+.alas,
+.gallina,
+.molida,
+.rebozados,
+.patitas,
+.medallon,
+.PatitasRellenas,
+.MedallonRelleno {
+    grid-area: unset;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .Grid {
+    grid-template-columns: 100%;
+    grid-row: 1fr;
+    grid-template-areas: unset;
+    justify-items: center;
+  }
+
+  .trozado,
+.pollo,
+.pechuga,
+.PataMuslo,
+.alas,
+.gallina,
+.molida,
+.rebozados,
+.patitas,
+.medallon,
+.PatitasRellenas,
+.MedallonRelleno {
+    grid-area: unset;
+  }
+}
+/* animacion productos-extend */
+.terror, .trozado, .rebozados {
+  text-align: center;
+  font-size: 120px;
+  font-weight: bold;
+  color: #eb7e01;
+  text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+}
+@media only screen and (max-width: 576px) {
+  .terror, .trozado, .rebozados {
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: #eb7e01;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .terror, .trozado, .rebozados {
+    text-align: center;
+    font-size: 90px;
+    font-weight: bold;
+    color: #eb7e01;
+    text-shadow: -1px 0 #414D68, 0 1px #414D68, 1px 0 #414D68, 0 -1px #414D68, -2px 2px 0 #414D68, 2px 2px 0 #414D68, 1px 1px #414D68, 2px 2px #414D68, 3px 3px #414D68, 4px 4px #414D68, 5px 5px #414D68;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

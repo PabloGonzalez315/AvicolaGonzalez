@@ -1,0 +1,131 @@
+/* Variable color texto */
+
+$txcolor1: #eb7e01;
+
+/* El famoso grid */
+.Grid {
+    display: grid;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "trozado trozado trozado"
+        "pollo pechuga PataMuslo"
+        "alas gallina molida"
+        "rebozados rebozados rebozados"
+        "patitas medallon PatitasRellenas"
+        ". MedallonRelleno . ";
+    gap: 15px;
+    text-align: center;
+
+}
+
+/* Transformacion */
+.Grid {
+    img {
+        padding-bottom: 10px;
+                &:hover {
+                    @include mediaP
+        }
+    }
+} 
+
+.trozado {
+    grid-area: trozado;
+    @extend %AnimacionTexto;
+}
+
+.pollo {
+    grid-area: pollo;
+
+}
+
+.pechuga {
+    grid-area: pechuga;
+}
+
+.PataMuslo {
+    grid-area: PataMuslo;
+}
+
+.alas {
+    grid-area: alas;
+}
+
+.gallina {
+    grid-area: gallina;
+}
+
+.molida {
+    grid-area: molida;
+}
+
+.rebozados {
+    grid-area: rebozados;
+    @extend %AnimacionTexto;
+}
+
+.patitas {
+    grid-area: patitas;
+}
+
+.medallon {
+    grid-area: medallon;
+}
+
+.PatitasRellenas {
+    grid-area: PatitasRellenas;
+}
+
+.MedallonRelleno {
+    grid-area: MedallonRelleno;
+}
+
+@media only screen and (max-width: 576px) {
+    .Grid {
+        grid-template-columns: 100%;
+        grid-row: 1fr;
+        grid-template-areas: unset;
+        justify-items: center;
+    }
+    .trozado,
+    .pollo,
+    .pechuga,
+    .PataMuslo,
+    .alas,
+    .gallina,
+    .molida,
+    .rebozados,
+    .patitas,
+    .medallon,
+    .PatitasRellenas,
+    .MedallonRelleno {
+        grid-area: unset;
+    }
+    
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+.Grid {
+        grid-template-columns: 100%;
+        grid-row: 1fr;
+        grid-template-areas: unset;
+        justify-items: center;
+    }
+    .trozado,
+    .pollo,
+    .pechuga,
+    .PataMuslo,
+    .alas,
+    .gallina,
+    .molida,
+    .rebozados,
+    .patitas,
+    .medallon,
+    .PatitasRellenas,
+    .MedallonRelleno {
+        grid-area: unset;
+    }
+    
+}
+

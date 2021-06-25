@@ -1,0 +1,10 @@
+@mixin Condition ($BgcolorIf) {
+    background-color: $BgcolorIf;
+
+    @if $BgcolorIf == white {
+        text-shadow: 1px 1px #fff;
+    } @else {
+        text-shadow: 1px 1px black;
+    }
+    
+}/* cambiando el background de la caja donde se encuentra el texbox ''h5 class="card-title fs-3 textbox'' cambia el estilo de las letras textbox */
