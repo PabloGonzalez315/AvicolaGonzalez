@@ -108,6 +108,10 @@ td {
   padding: 25px;
 }
 
+.form {
+  text-align: center;
+}
+
 /* Boton de whatsapp */
 .whatsapp {
   position: fixed;

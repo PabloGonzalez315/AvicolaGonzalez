@@ -7,5 +7,13 @@
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PabloGonzalez315/AvicolaGonzalez.git"
+  },
+  "bugs": {
+    "url": "https://github.com/PabloGonzalez315/AvicolaGonzalez/issues"
+  },
+  "homepage": "https://github.com/PabloGonzalez315/AvicolaGonzalez#readme",
   "description": ""
 }
