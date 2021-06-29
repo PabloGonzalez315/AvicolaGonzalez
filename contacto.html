@@ -69,9 +69,26 @@
          </div>
      </nav>
  </header>
-    <div class="form space">
-<iframe src="https://docs.google.com/forms/d/e/1FAIpQLScAX6g4JR3gGdIsnEjez6fEb47TFKJCigFemFXP5QB3soB7CQ/viewform?embedded=true" width="640" height="987" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
-</div>
+ <div class="alert alert-success container" role="alert">
+    Comunicate con nosotros y a la brevedad nos pondremos en contacto
+  </div>
+ <div class="space container ">
+    <form action="enviar.php" method="POST" name="contact-form">
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="nombre" class="d-block">
+
+        <label for="mail">Email</label>
+        <input type="email" name="email" id="mail" class="d-block">
+
+        <label for="mail">asunto</label>
+        <input type="subject" id="asunto" name="asunto" class="d-block">
+
+        <label for="Mensaje">Mensaje</label>
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="field"></textarea>
+        <input type="submit" Class="btn btn-green d-block" value="Enviar">
+    </form>
+
+  </div>
 
 <footer>
 <!-- footer -->
