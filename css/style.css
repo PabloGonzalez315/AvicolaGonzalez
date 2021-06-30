@@ -1,10 +1,6 @@
 /* Variable color mixin */
 /* cambiando el background de la caja donde se encuentra el texbox ''h5 class="card-title fs-3 textbox'' cambia el estilo de las letras textbox */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
-a {
-  cursor: url(/Images/Icons/icopata.png), auto;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -39,6 +35,10 @@ a {
 form {
   margin: 0 auto;
   width: 300px;
+}
+
+a {
+  cursor: url(../../Images/Icons/icopata.png), auto;
 }
 
 /* general del body */
