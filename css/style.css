@@ -141,6 +141,10 @@ td {
   text-align: center;
 }
 
+.field {
+  resize: none;
+}
+
 /* Boton de whatsapp */
 .whatsapp {
   position: fixed;
